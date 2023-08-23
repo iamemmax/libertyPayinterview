@@ -5,8 +5,7 @@
 
 }
 
-.container {
-   
+.container { 
     // height: rem;
     position: relative;
     padding-inline: 2.13rem;
@@ -14,15 +13,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
-  
     padding-top: 24px;
    
-    
-
     h1 {
         color: #FFF;
-        font-family: Clash Display;
+        font-family:'ClashDisplay-Bold';
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
@@ -32,7 +27,7 @@
 
     p {
         color: #FFF;
-        font-family: Clash Display;
+        font-family: 'ClashDisplay-Regular';
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -41,7 +36,6 @@
 
     button {
         display: none;
-
         @media screen and (max-width:50em) {
             display: block;
             width: 2.25rem;
@@ -58,6 +52,9 @@
             border: none;
             letter-spacing: -0.015rem;
             cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 

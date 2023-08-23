@@ -4,14 +4,9 @@ import NotificationIcon from "../../../../public/assets/icon/Notification"
 import styles from "./styles/headerStyles.module.scss"
 import {useState} from"react"
 import Profilepix from "../../../../public/assets/icon/ProfilePix"
-import MoreIcon from "../../../../public/assets/icon/MoreIcon"
 
 const AnalyticsHeader = ()=>{
-const [toggle, setToggle] = useState(false)
-const handleClick =()=>{
-    setToggle((prev)=> !prev)
-    localStorage.setItem("toggle",toggle.toString())
-}
+
     return(
         <div className={styles.container}>
             <h3>Analytics dashboard</h3>
@@ -29,7 +24,6 @@ const handleClick =()=>{
                 </div>
                </div>
             </div>
-            <button onClick={handleClick}>Menu</button>
         </div>
     )
 }

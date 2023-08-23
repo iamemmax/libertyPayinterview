@@ -99,6 +99,8 @@
     border-radius: 0.75rem;
     background: #032282;
     padding: 1.44rem 1.5rem 1.5rem 1.5rem;
+    position: relative;
+    overflow: hidden;
 
     span {
         color: #CDCDCD;
@@ -123,7 +125,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
-            letter-spacing: 3px;
+            // letter-spacing: 3px;
         }
     }
 
@@ -155,4 +157,10 @@
     @media screen and (max-width:50em) {
         width: 100%;
       }
+}
+
+.layouticon{
+    position: absolute;
+    top: 0;
+    right: 0;
 }

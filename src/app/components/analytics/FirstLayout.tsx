@@ -12,7 +12,7 @@ return(
     <div className={styles.container}>
         <div className={styles.wallets}>
             {/* <div> */}
-{/* <LayoutIccons/> */}
+<LayoutIccons className={styles.layouticon}/>
 
                 <span>Wallet Balance</span>
                 <div className={styles.amtBox}>
