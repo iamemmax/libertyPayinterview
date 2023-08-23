@@ -116,6 +116,8 @@
         align-items: center;
         gap: 0.88rem;
         margin-bottom: 3px;
+       
+        
 
         p {
             color: #FFF;
@@ -126,6 +128,10 @@
             font-weight: 600;
             line-height: normal;
             // letter-spacing: 3px;
+        }
+        .star{
+            padding-top: 0.3rem;
+            // align-self: center;
         }
     }
 

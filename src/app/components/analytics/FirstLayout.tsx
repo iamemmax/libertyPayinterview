@@ -16,7 +16,7 @@ return(
 
                 <span>Wallet Balance</span>
                 <div className={styles.amtBox}>
-                    <p>{visible ? "₦50,000.00": "*************"}</p>
+                    {visible ?<p> ₦50,000.00</p> :<p className={styles.star}>**********</p>}
                     <EyeIcon onClick={()=>setVisible((prev)=> !prev)} style={{cursor:"pointer",zIndex:99999}}/>
                 </div>
                 <div className={styles.buttonGroup}>
