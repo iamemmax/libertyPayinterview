@@ -3,15 +3,21 @@ import {useState,useEffect, Dispatch, SetStateAction} from "react"
 import Link from "next/link"
 import { TopNav, lastNav, middleNav, topNav } from "../../../../public/assets/mock/nav"
 import styles from "./styles.module.scss"
+import { useRouter } from 'next/navigation'
 
 interface props {
     setShow:Dispatch<SetStateAction<boolean>>
 }
 const Navigation = ({setShow}:props) => {
-   const [active, setActive] = useState(1)
+    const [active, setActive] = useState(2)
+    const router = useRouter()
    useEffect(()=>{
-setActive(1)
-   },[])
+setActive(2)
+   }, [])
+    useEffect(()=>{
+router.push("/dashboard/analytics")
+   }, [active])
+    
    const handleClick =(nav:TopNav) =>{
     setActive(Number(nav.id))
     setShow(false)
