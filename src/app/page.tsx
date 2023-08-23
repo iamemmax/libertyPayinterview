@@ -19,7 +19,8 @@ export default function HomeLayout({
     
      <Navigation setShow={setShow}/>
 
-    </div>
+      </div> 
+      
     {!show && <button className={styles.showBtn} onClick={()=>setShow(!show)}>Menu</button>}
     <div className={styles.right}>
       {children}
